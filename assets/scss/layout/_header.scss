@@ -1,0 +1,38 @@
+header{
+  background-color: $primary;
+}
+.brand img{
+  height: 56px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.nav-item {
+  a{
+    color: white;
+    font-size: 20px;
+    padding: 8px 32px;
+    display: block;
+    text-align: center;
+  }
+  a:hover{
+    color: $light;
+  }
+}
+
+@include mobile-larger {
+  .brand{
+    margin: 0 auto;
+  }
+  .nav-item{
+    width: 50%;
+    a{
+      font-size: 16px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      border: 1px solid #fff;
+    }
+  }
+  .menu{
+    margin: 0;
+  }
+}

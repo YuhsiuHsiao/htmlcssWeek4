@@ -1,0 +1,152 @@
+.banner{
+  height: calc(100vh - 80px);
+  background-image: url("../../assets/images/home-header.png");
+  background-position: center;
+  background-size: cover;
+  padding: 296px 0;
+
+  p{
+    font-size: 36px;
+  }
+  
+  @include mobile-larger {
+    height: auto;
+    padding: 144px 0;
+    p{
+      font-size: 16px;
+    }
+  }
+}
+
+.abouts{
+  background-color: $light;
+  p{
+    color: $black;
+  }
+}
+.about-item{
+  width: calc(25% - 18px);
+  padding: 0 14px;
+  img{
+    width: 100px;
+  }
+  @include pad {
+    width: calc(50% - 12px);
+  }
+
+}
+@include mobile-larger {
+  .banner{
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .abouts{
+    padding: 40px 0;
+  }  
+  .about-item{
+    width: 100%;
+  }
+}
+
+.classic {
+  h3{
+    color: $primary;
+  }
+  li{
+    width: calc(33% - 16px);
+  }
+  @include pad {
+    ul{
+      flex-direction: column;
+    }
+    li{
+      width: 100%;
+    }
+    img{
+      max-width: 336px;
+    }
+  }
+}
+
+.jointDesign{
+  background-image: url("../../assets/images/index-bg-sm.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  h3{
+    color: $primary;
+  }
+  @include pad {
+    ul{
+      flex-direction: column;
+      padding: 0 12px;
+    }
+  }
+}
+
+.recommend{
+  li{
+    padding: 0 12px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 25%;
+    @include mobile-larger {
+      max-width: 50%;
+    }
+    @include mobile {
+      max-width: 100%;
+    }
+    
+  }
+  .card{
+    height: 100%;
+    box-shadow: 0 2px 6px #00000029;
+    border-radius: 4px;
+    &-body{
+      height: 205px;
+    }
+  }
+}
+
+
+.contact{
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.contact form{
+  max-width: 636px;
+  margin: 0 auto;
+
+  .form-contral{
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid #000000;
+  }
+  .checkbox {
+    height: 24px;
+    width: 24px;
+  }
+  .btn-submit {
+    width: 80%;
+    color: #fff;
+    border: none;
+    padding: 16px;
+    font-size: 16px;
+  }
+  @include mobile-larger {
+    .btn-submit {
+      width: 100%;
+    }
+  }
+
+  textarea::placeholder, input::placeholder{
+    color: rgba(0, 0, 0, 0.2);
+  }
+}

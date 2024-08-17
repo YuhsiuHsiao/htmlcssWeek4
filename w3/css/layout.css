@@ -1,0 +1,105 @@
+/*.layout. header&footer*/
+header{
+  background-color: var(--primary);
+}
+.brand img{
+  height: 56px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.nav-item a{
+  color: white;
+  font-size: 20px;
+  padding: 8px 32px;
+  display: block;
+  text-align: center;
+}
+.nav-item a:hover{
+  color: var(--light);
+}
+@media (max-width: 768px) {
+  .brand{
+    margin: 0 auto;
+  }
+  .nav-item{
+    width: 50%;
+  }
+  .menu{
+    margin: 0;
+  }
+  .nav-item a{
+    font-size: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 1px solid #fff;
+  }
+}
+
+footer{
+  padding-top: 56px;
+  padding-bottom: 32px;
+}
+footer .menu{
+  padding: 4px 0;
+}
+footer a{
+  color: white;
+}
+.info{
+  font-size: 36px;
+}
+.cpoyright a{
+  font-size: 14px;
+}
+@media (max-width: 992px) {
+  footer .menu{
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  footer{
+    padding: 24px 12px;
+  }
+  .info, .cpoyright{
+    font-size: 16px;
+  }
+}
+
+.social li{
+  margin-right: 32px;
+}
+.social li:last-child{
+  margin-right: 0;
+}
+.social img{
+  width: 48px;
+}
+@media (max-width: 992px) {
+  .social li{
+    margin-right: 16px;
+  }
+  .social img{
+    width: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .social li{
+    margin-right: 8px;
+  }
+  .social img{
+    width: 24px;
+  }
+  .copyright-content, .copyright ul {
+    flex-direction: column;
+  }
+}
+footer .menu li, .copyright li{
+  margin-right: 48px;
+}
+.menu li:last-child, .copyright li:last-child {
+  margin-right: 0;
+}
+.info span{
+  font-size: larger;
+  padding: 6px;
+}

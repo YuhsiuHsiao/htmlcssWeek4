@@ -1,0 +1,151 @@
+
+/*.index.*/
+.banner{
+  height: calc(100vh-80px);
+  background-image: url(../images/home-header.png);
+  background-position: center;
+  background-size: cover;
+  padding: 296px 0;
+}
+.banner p{
+  font-size: 36px;
+}
+@media (max-width: 768px) {
+  .banner{
+    padding: 144px 0;
+  }
+  .banner p{
+    font-size: 16px;
+  }
+}
+
+.abouts{
+  background-color: var(--light);
+}
+.about-item img{
+  width: 100px;
+}
+.about-item{
+  width: calc(25% - 18px);
+  padding: 0 14px;
+}
+.abouts p{
+  color: var(--black);
+}
+
+@media (max-width: 992px) {
+  .about-item{
+    width: calc(50% - 12px);
+  }
+}
+@media (max-width: 768px) {
+  .banner{
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .abouts{
+    padding: 40px 0;
+  }  
+  .about-item{
+    width: 100%;
+  }
+}
+
+.classic h3{
+  color: var(--primary);
+}
+.classic li{
+  width: calc(33% - 16px);
+}
+
+@media (max-width:992px) {
+  .classic ul{
+    flex-direction: column;
+  }
+  .classic li{
+    width: 100%;
+  }
+  .classic img{
+    max-width: 336px;
+  }
+}
+
+.jointDesign{
+  background-image: url(../images/index-bg-sm.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.jointDesign h3{
+  color: var(--primary);
+}
+@media (max-width:992px) {
+  .jointDesign ul{
+    flex-direction: column;
+    padding: 0 12px;
+  }
+}
+
+.recommend li{
+  padding: 0 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width:768px) {
+  .recommend li{
+    max-width: 50%;
+  }
+}
+@media (min-width:992px) {
+  .recommend li{
+    max-width: 25%;
+  }
+}
+.recommend .card{
+  height: 100%;
+  box-shadow: 0 2px 6px #00000029;
+  border-radius: 4px;
+}
+.recommend .card-body{
+  height: 205px;
+}
+.contact{
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.contact form{
+  max-width: 636px;
+  margin: 0 auto;
+}
+.form-contral{
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 1px solid #000000;
+}
+.checkbox {
+  height: 24px;
+  width: 24px;
+}
+.btn-submit {
+  width: 80%;
+  color: #fff;
+  border: none;
+  padding: 16px;
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  .btn-submit {
+    width: 100%;
+  }
+}
+
+textarea::placeholder, input::placeholder{
+  color: rgba(0, 0, 0, 0.2);
+}
